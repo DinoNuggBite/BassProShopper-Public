@@ -151,3 +151,12 @@
      width: 210px;
      overflow: hidden;
 }
+ #bps-deleteChanges {
+     background-color: #f2244d;
+     border: 1px solid #f2244d;
+}
+ #bps-deleteChanges:hover {
+     color: #000;
+     background-color: #ff909f;
+     border: 1px solid #ff909f;
+}
