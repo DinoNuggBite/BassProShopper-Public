@@ -147,3 +147,7 @@
      overflow-y: scroll;
      scrollbar-width: thin;
 }
+.bps-file-input {
+     width: 210px;
+     overflow: hidden;
+}
