@@ -128,7 +128,7 @@
      margin-top: 10px!important;
 }
  #bassLists textarea{
-     max-width: 228px;
+     max-width: 210px;
      width: 100%;
      min-height: 75px;
      height: 75px;
@@ -140,4 +140,10 @@
      display: block;
      content: "";
      margin-top: 5px;
+}
+#bps-panel-2 {
+     max-height: 380px;
+     overflow-x: hidden;
+     overflow-y: scroll;
+     scrollbar-width: thin;
 }
