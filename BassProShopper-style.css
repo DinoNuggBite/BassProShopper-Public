@@ -152,6 +152,7 @@
      overflow: hidden;
 }
  #bps-deleteChanges {
+     display: none;
      background-color: #f2244d;
      border: 1px solid #f2244d;
 }
