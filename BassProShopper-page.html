@@ -1,0 +1,64 @@
+<div class="bassproTail"></div>
+  <div id="bassHead">
+	<img src="https://images.neopets.com/themes/h5/basic/images/myshop-icon.png">
+	<h1>Bass Pro Shopper</h1>
+	<br><br>
+  </div>
+  <div role="bps-tablist">
+    <button class="bps-tab-button" id="tab-1" aria-selected="true" aria-controls="bps-panel-1" role="bps-tab" type="button">Refresh</button>
+    <button class="bps-tab-button" id="tab-2" aria-selected="false" aria-controls="bps-panel-2" role="bps-tab" type="button">Lists</button>
+    <button class="bps-tab-button" id="tab-3" aria-selected="false" aria-controls="bps-panel-3" role="bps-tab" type="button">Click</button>
+    <button class="bps-tab-button" id="tab-4" aria-selected="false" aria-controls="bps-panel-4" role="bps-tab" type="button">Haggle</button>
+  </div>
+  <div id="bassBody" class="bps-eleBody">
+  	<div id="bps-panel-1" aria-labelledby="tab-1" role="bps-tabpanel">
+    	<label for="option1">Auto-refresh empty shops</label>
+		<input type="checkbox" id="option1" class="bps-input">
+		<p id="option1Extra" class="bps-ExtraOptions" style="display: none">
+			Refresh shops every <input name="lowerValue" type="number" placeholder="0.5" value="" size="3" maxlenght="5" step="0.1" min="0"> to <input name="higherValue" type="number" placeholder="1" value="" size="3" maxlenght="5" step="0.1" min="0"> seconds
+		</p>
+  	</div>
+  	<div id="bps-panel-2" aria-labelledby="tab-2" role="bps-tabpanel" hidden>
+    	<label for="option2">Auto-click on items from list</label>
+		<input type="checkbox" id="option2" class="bps-input">
+        <div id="bassLists" class="bps-ExtraOptions" style="display: none">
+			<label for="option2op1">Items under 100k profit</label>
+			<input type="checkbox" id="option2op1" class="bps-input">
+			<textarea id="lowPriceList" placeholder="Paste item names separated by commas, NO quotation marks."></textarea>
+			<br>
+			<label for="option2op2">Items between 100k-1M profit</label>
+			<input type="checkbox" id="option2op2" class="bps-input">
+			<textarea id="midPriceList" placeholder="Paste item names separated by commas, NO quotation marks."></textarea>
+			<br>
+			<label for="option2op3">Items over 1M profit</label>
+			<input type="checkbox" id="option2op3" class="bps-input">
+			<textarea id="highPriceList" placeholder="Paste item names separated by commas, NO quotation marks."></textarea>
+        </div>
+  	</div>
+  	<div id="bps-panel-3" aria-labelledby="tab-3" role="bps-tabpanel" hidden>
+    	<label for="option3">Auto-confirm on clicked items</label>
+		<input type="checkbox" id="option3" class="bps-input">
+        <p id="option3Extra" class="bps-ExtraOptions" style="display: none">
+			<label for="option3op1">Play a sound when an item is clicked</label><input type="checkbox" id="option3op1" class="bps-input">
+    	</p>
+  	</div>
+  	<div id="bps-panel-4" aria-labelledby="tab-4" role="bps-tabpanel" hidden>
+    	<label for="option4">Auto-fill haggle price</label>
+		<input type="checkbox" id="option4" class="bps-input">
+		<p id="option4Extra" class="bps-ExtraOptions" style="display: none; margin-bottom: 0">
+			<i>Don't forget to click the captcha! ;)</i>
+		</p>
+  	</div>
+  </div>
+	<div id="bassAbout" class="bps-eleBody" style="display: none">
+		<h3 style="text-align: center; margin-top: 0; margin-bottom: 0">Bass Pro Shopper</h3>
+		<br>
+		<p style="text-align: center; font-size: 9pt; margin-bottom: 5px"><i id="bps-version">Version ${bpsVersion}</i></p>
+		<br style="margin-bottom: 5px">
+		<a href="https://www.youtube.com/watch?v=XeY0eOEEURM" target="_blank" style="margin-left: 85px;"><b><span style="color: #597523;">ϵ</span><span style="color: #344710;background-color: #c4ba5f;border-radius: 8px;">( 'Θ' )</span><span style="color: #597523;">϶</span><span style="color: #2e83e7;">｡° ⚬</span></b></a>
+        <br><br><br><br>
+		</p>
+	</div>
+    <button id="bps-exportChanges" class="bps-buttons" name="bps-ExportImport">Export settings</button>
+    <button id="bps-importChanges" class="bps-buttons" name="bps-ExportImport">Import settings</button>
+	<button id="bps-refresh" class="bps-buttons" onClick="window.location.reload();">Refresh to save changes</button>
